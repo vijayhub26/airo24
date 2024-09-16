@@ -1,0 +1,170 @@
+/* Styles for fade-in sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateZ(50px);
+  transition: opacity 3s ease-out, transform 2s ease-out;
+  visibility: hidden;
+  text-decoration: none;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateZ(0);
+  visibility: visible;
+}
+
+/*BORDER ANIMATION*/
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: red;
+  --c2: rgb(40, 9, 9);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width:100px;
+  height: 0px;
+  margin-top: 20%;
+}
+
+.box {
+    max-width:200px;
+    max-height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  margin: max(1rem, 3vw);
+  border: 0.35rem solid;
+  padding: 25px;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+  border-image: radial-gradient(
+      ellipse at var(--gradX) var(--gradY),
+      var(--c1),
+      var(--c1) 10%,
+      var(--c2) 40%
+    )
+    30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+/* Responsive Media Query */
+@media (max-width: 800px) {
+  .box {
+    font-size: 5vw;
+    width: 200px;
+    
+  }
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+
+  }
+}
+/* HR styling */
+hr {
+  width: 100%;
+  height: 5px;
+  margin:50px auto;
+  border: none;
+  background: linear-gradient(90deg, red 0%, red 50%, red 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animation for moving light */
+hr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, red 0%, red 50%, red 100%);
+  animation: moveLight .2s linear infinite;
+}
+
+/* Keyframes for the moving light */
+@keyframes moveLight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/*CARD ANIMATION*/

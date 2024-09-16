@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    min-height: 100%;
+    height: 100vh;
+  }
+  .Quick-navigation {
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    top: 50%;
+    left: 10;
+    transform: translateY(-50%);
+  }
+  .Quick-navigation a{
+    color: white;
+    font-weight: 900;
+  }
+  .Quick-navigation a:hover{
+    color: red;
+  }
+  .Quick-navigation-item {
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s;
+    padding: 0.5em;
+    display: block;
+  }
+  .Quick-navigation-item:hover,
+  .Quick-navigation-item.current {
+    color:white;
+  }
+  .Scroll-progress-indicator {
+    will-change: opacity, transform;
+    transition: all 0.5s;
+    left: -10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    padding: 2em;
+    transform: translateX(200%) translateY(-50%);
+  }
+  .Scroll-progress-indicator.visible {
+    transform: translateX(-100%) translateY(-50%);
+    opacity: 1;
+  }
+  #A {
+    max-height: 100vh;
+  }
+  #B {
+    max-height: 50vh;
+    display: grid;
+  }
+  #C {
+    min-height: 140vh;
+    display: grid;
+    margin-top: -10%;
+  }
+  #D {
+    min-height: 100vh;
+  }
+  #E {
+    min-height: 100vh;
+    display: grid;
+  }
+  .Scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    border: none;
+    color:white;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s;
+    outline: none;
+  }
+  .Scroll-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .Scroll-to-top:hover {
+    color: white;
+  }
+  @media only screen and (max-width: 800px) {
+    .Quick-navigation a{
+  font-size: 20px;
+  font-weight: bold;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #C {
+      min-height: 250vh;
+      display: grid;
+     
+    }
+    #B {
+      min-height: 150vh;
+      display: grid;
+    }
+    #E{
+      margin-top: 20%;
+    }
+    #A {
+      min-height: 120vh;
+    }
+  }
+  

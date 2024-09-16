@@ -1,0 +1,189 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Video styling */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover; /* Ensures the video covers the background properly */
+  filter: contrast(80%);
+  filter: brightness(50%);
+}
+
+/* Content over the video */
+.content {
+  color: white;
+  top: 0%;
+}
+.container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  line-height: 35px;
+  font-size:large;
+  font-family: cursive;   
+}
+.subtitle{
+  color: red;
+  font-family:serif;
+  font-size:20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.title{
+  color: red;
+  font-size: x-large;
+  line-height: 30px;
+}
+ul li{
+  list-style:decimal ;
+}
+/*CARD*/
+.concards{
+display: grid;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 20px;
+row-gap: 25px;
+}
+.concards1{
+border: 3px solid gray;
+border-radius: 15px;
+padding: 5px;
+min-width: 200px;
+min-height: 200px;
+display: grid;
+align-items: center;
+justify-content: center;
+}
+.concards2{
+border: 3px solid gray;
+border-radius: 15px;
+padding: 25px;
+min-width: 200px;
+min-height: 200px;
+display: grid;
+align-items: center;
+justify-content: center;
+}
+.concards1{
+color: white;
+font-size: 25px;
+}
+.concards1 a{
+color: white;
+font-family: cursive;
+text-decoration: none;
+}
+.concards2{
+color: white;
+font-family: cursive;
+font-size: 25px;
+}
+.concards1 i{
+display: grid;
+align-items: center;
+justify-content: center;
+}
+.concards2 i{
+display: grid;
+align-items: center;
+justify-content: center;
+}
+.concards1 a{
+font-family: cursive;
+color: white;
+font-size: medium;
+text-decoration: none;
+}
+.concards2 a{
+font-family: cursive;
+color: white;
+font-size: medium;
+text-decoration: none;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+.concards{
+   display: grid;
+   row-gap: 20px;
+ }
+ .concards1{
+  width: 100%;
+}
+.concards2{
+   width: 100%;
+ }
+ 
+}
+
+@media (max-width: 576px) {
+.concards1{
+  width: 100%;
+}
+.concards2{
+   width: 100%;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+.containers {
+display: flex;
+max-height: 90vh; 
+position: relative;
+/* Full height of the viewport */
+}
+
+.image-side {
+flex: 1; 
+display: flex;
+align-items: center;
+justify-content: center;
+/* 50% of the width */
+}
+
+.image-side img {
+width: 100%;
+max-height: 100%;
+object-fit: cover; 
+/* Ensures the image fills its container */
+}
+
+.content-side {
+flex: 1; /* 50% of the width */
+overflow-y: auto; /* Allows vertical scrolling */
+padding: 20px;
+}
+
+.scrollable-content {
+height: auto;
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none; 
+/* This height simulates long content. Adjust as necessary */
+}
+.content-side::-webkit-scrollbar {
+display: none;
+}
+@media only screen and (max-width: 800px) {
+  .image-side {
+      display: none;
+  }
+  }
