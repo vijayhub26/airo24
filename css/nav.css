@@ -11,11 +11,6 @@ html {
   body {
     height: 100%;
   }
-  body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    margin: 0;
-  }
-  
   section {
     display: flex;
     justify-content: center;
