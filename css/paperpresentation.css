@@ -9,14 +9,14 @@ body, html {
   @media (max-width: 768px) { /* For tablets and smaller */
     html, body {
        font-family: cursive;
-       font-size: medium;
+       font-size: x-large;
     }
   }
   
   @media (max-width: 480px) { /* For mobile devices */
     html, body {
        font-family: cursive;
-       font-size: medium;
+       font-size: x-large;
     }
   }
   /* Video styling */
