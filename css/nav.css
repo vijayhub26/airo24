@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+
   }
   *,
   *:after,
@@ -65,22 +66,23 @@ html {
     opacity: 1;
   }
   #A {
-    max-height: 100vh;
+    max-height: 90vh;
   }
   #B {
-    max-height: 50vh;
+    min-height: 100%;
     display: grid;
   }
   #C {
-    min-height: 140vh;
+    max-height: 80vh;
     display: grid;
-    margin-top: -10%;
+  
   }
   #D {
-    min-height: 100vh;
+    min-height: 160vh;
+    display: grid;
   }
   #E {
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
   }
   .Scroll-to-top {
@@ -112,19 +114,19 @@ html {
   }
   @media only screen and (max-width: 800px) {
     #C {
-      min-height: 250vh;
+      min-height: 210%;
       display: grid;
-     
+    
     }
     #B {
-      min-height: 150vh;
+      min-height: 160%;
       display: grid;
     }
-    #E{
-      margin-top: 20%;
+    #D{
+      min-height: 300%;
     }
     #A {
-      min-height: 120vh;
+      min-height: 110%;
     }
   }
   

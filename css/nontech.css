@@ -3,8 +3,22 @@ body, html {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  font-family: cursive;
 }
 
+
+@media (max-width: 768px) { /* For tablets and smaller */
+  html, body {
+     font-family: cursive;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  html, body {
+     font-family: cursive;
+
+  }
+}
 /* Video styling */
 .video-background {
   position: fixed;
@@ -30,7 +44,7 @@ body, html {
   padding: 20px;
   line-height: 35px;
   font-size:large;
-  font-family: cursive;   
+  font-family:cursive;   
 }
 .subtitle{
   color: red;
