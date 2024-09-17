@@ -6,13 +6,14 @@ body{
 @media (max-width: 768px) { /* For tablets and smaller */
    html, body {
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: larger;
    }
 }
 
 @media (max-width: 480px) { /* For mobile devices */
    html, body {
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+font-size: larger;
    }
 }
 
