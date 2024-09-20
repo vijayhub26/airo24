@@ -1,4 +1,4 @@
-body, html {
+body{
     margin: 0;
     padding: 0;
     height: 100%;
@@ -6,19 +6,22 @@ body, html {
     font-family: cursive;
   }
 
-  @media (max-width: 768px) { /* For tablets and smaller */
-    html, body {
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       font-size: larger;
+  @media only screen and (max-width: 800px) { 
+    body {
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
     }
-  }
-  
-  @media (max-width: 480px) { /* For mobile devices */
-    html, body {
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       font-size: larger;
+ }
+ 
+ @media only screen and (max-width: 500px) { 
+     body {
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: larger;
     }
-  }
+ }
+ p{
+  font-family: cursive;
+ }
   /* Video styling */
   .video-background {
     position: fixed;
@@ -60,6 +63,7 @@ body, html {
 }
 ul li{
     list-style:decimal ;
+    font-family: cursive;
 }
 /*CARD*/
 .concards{

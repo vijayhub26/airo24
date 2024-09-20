@@ -109,12 +109,12 @@ html {
   }
   @media only screen and (max-width: 800px) {
     #C {
-      min-height: 210%;
+      min-height: 230%;
       display: grid;
     
     }
     #B {
-      min-height: 160%;
+      min-height: 130%;
       display: grid;
     }
     #D{
