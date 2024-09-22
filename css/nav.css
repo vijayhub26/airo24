@@ -126,7 +126,7 @@ html {
   }
   @media only screen and (max-width: 350px) {
     #B {
-      min-height: 340%;
+      min-height: 350%;
       display: grid;
     }
     #C {
