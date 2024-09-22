@@ -435,3 +435,22 @@ column-gap: 25px;
       left: -40px;
     }
  }
+.contque{
+   color: white;
+   font-size:x-large;
+   font-weight: 600;
+}
+@media (max-width: 768px) {
+   .contque{
+      color: white;
+      font-size:x-large;
+      font-weight: 600;
+   }
+   }
+@media (max-width: 576px) {
+   .contque{
+      color: white;
+      font-size:large;
+      font-weight: 600;
+   }
+   }
