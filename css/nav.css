@@ -128,10 +128,11 @@ html {
     #B {
       min-height: 350%;
       display: grid;
+      margin-top: 30%;
     }
     #C {
       min-height: 400%;
       display: grid;
-    
+      margin-top: 30%;
     }
   }
