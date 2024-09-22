@@ -124,4 +124,14 @@ html {
       min-height: 110%;
     }
   }
-  
+  @media only screen and (max-width: 300px) {
+    #B {
+      min-height: 260%;
+      display: grid;
+    }
+    #C {
+      min-height: 320%;
+      display: grid;
+    
+    }
+  }
