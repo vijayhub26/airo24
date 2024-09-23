@@ -107,14 +107,14 @@ html {
   font-weight: bold;
     }
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 800px) {
     #C {
-      min-height:240%;
+      min-height: 220%;
       display: grid;
     
     }
     #B {
-      min-height: 140%;
+      min-height: 160%;
       display: grid;
     }
     #D{
