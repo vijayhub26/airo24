@@ -138,7 +138,7 @@ html {
 
 /* For landscape mode, make sure to maintain portrait view */
 @media screen and (orientation: landscape) {
-  body {
+  #c{
     /* Rotate the content to maintain portrait layout */
     transform: rotate(90deg);
     transform-origin: left top;
