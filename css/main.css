@@ -8,13 +8,15 @@ body{
    body {
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size: larger;
+   overflow-x: hidden;
    }
 }
 
 @media only screen and (max-width: 500px) { 
-   html, body {
+    body {
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: larger;
+overflow-x: hidden;
    }
 }
 .container-content1 {
