@@ -140,13 +140,9 @@ html {
 @media screen and (orientation: landscape) {
   #c{
     /* Rotate the content to maintain portrait layout */
-    transform: rotate(90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
+      min-width: 100%;
+    min-height: 200%;
     overflow-x: hidden;
-    position: absolute;
-    top: 100%;
     left: 0;
   }
 }
