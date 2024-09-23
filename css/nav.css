@@ -114,7 +114,7 @@ html {
     
     }
     #B {
-      min-height: 160%;
+      min-height: 100%;
       display: grid;
     }
     #D{
@@ -124,14 +124,10 @@ html {
       min-height: 110%;
     }
   }
-  @media (max-width: 1000px) {
+  @media (min-width: 800px) {
     #C {
-      min-height: 370%;
+      min-height: 250%;
       display: grid;
+    }
     
-    }
-    #B {
-      min-height: 240%;
-      display: grid;
-    }
     }
