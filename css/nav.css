@@ -125,4 +125,28 @@ html {
       min-height: 110%;
     }
   }
- 
+ /* For portrait mode */
+@media screen and (orientation: portrait) {
+  body {
+    /* Your styles for portrait mode */
+    background-color: lightblue;
+    /* Set a fixed height/width for portrait mode */
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/* For landscape mode, make sure to maintain portrait view */
+@media screen and (orientation: landscape) {
+  body {
+    /* Rotate the content to maintain portrait layout */
+    transform: rotate(90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
