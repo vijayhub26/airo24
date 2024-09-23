@@ -126,7 +126,7 @@ html {
   }
   @media (min-width: 800px) {
     #C {
-      min-height: 250%;
+      min-height: 240%;
       display: grid;
     }
     
