@@ -135,14 +135,3 @@ html {
     height: 100vh;
   }
 }
-
-/* For landscape mode, make sure to maintain portrait view */
-@media screen and (orientation: landscape) {
-  #c{
-    /* Rotate the content to maintain portrait layout */
-      min-width: 100%;
-    min-height: 200%;
-    overflow-x: hidden;
-    left: 0;
-  }
-}
